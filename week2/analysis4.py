@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 
-path = r'D:\python\bigdata\dataset\gasoline_milk_price.xlsx'
+path = r'D:\python\bigdata\sample_data\gasoline_milk_price.xlsx'
 data = pd.DataFrame(pd.read_excel(path))
 
 x = data.year

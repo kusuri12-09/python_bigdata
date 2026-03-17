@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = 'NanumGothic'
 plt.rcParams['axes.unicode_minus'] = False # 마이너스 기호 깨짐 방지
 
-path = r'D:\python\bigdata\dataset\elm_students_tall_weight.xlsx'
+path = r'D:\python\bigdata\sample_data\elm_students_tall_weight.xlsx'
 data = pd.DataFrame(pd.read_excel(path))
 
 plt.scatter(data.height, data.weight)

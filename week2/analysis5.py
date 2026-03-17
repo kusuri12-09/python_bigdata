@@ -2,8 +2,7 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 
-path = r'D:\python\bigdata\dataset\smartphone_usage_time.csv'
-
+path = r'D:\python\bigdata\sample_data\smartphone_usage_time.csv'
 data = pd.read_csv(path)
 
 print('median = ', np.median(data)) #중앙값
