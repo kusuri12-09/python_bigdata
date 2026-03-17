@@ -1,16 +1,17 @@
-import pandas as pd
 from matplotlib import pyplot as plt
+plt.rcParams['font.family'] = 'Malgun Gothic'
 
-path = r'D:\python\bigdata\dataset\gasoline_milk_price.xlsx'
-data = pd.DataFrame(pd.read_excel(path))
+x=[ '보조출연.방청', '방문.학습지 교사', '컴퓨터.정보통신', '교육.강사 기타', '요가.필라테스 강사']
+y=[29874, 23551, 20812, 19930, 19766] 
 
-x = data.year
-y1 = data.gasoline
-y2 =data.milk
+x1=[ '커피전문점',  '캐셔.카운터', '베이커리.도넛.떡', '아이스크림.디저트', '편의점']
+y1=[9411, 9371, 9354, 9317, 9268]
 
-plt.plot(x, y1, linestyle='solid', label='gasoline')  # x와 y1 그래프 작성
-plt.plot(x, y2, linestyle='dashed', label='milk')  # x와 y2 그래프 작성
+plt.bar(x, y)     
+plt.title('아르바이트 상위시급')
+plt.xticks(rotation=20)
+plt.show()
 
-plt.legend(loc='best', ncol=2) # 레이블 표시 방법 
-plt.title('change of price')   
-plt.show()	              
+plt.barh(x1, y1)
+plt.title('아르바이트 하위시급')
+plt.show()
